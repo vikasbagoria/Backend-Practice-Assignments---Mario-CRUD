@@ -15,7 +15,7 @@ app.use(bodyParser.json())
 // your code goes here
 app.get("/mario", async (req, res) => {
     try {
-        const data = await marioModel.find();
+        const data = await marioModel;
           res.send(data);
         
     } catch (e) {
