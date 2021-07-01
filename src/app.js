@@ -13,9 +13,9 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 // your code goes here
-app.get("/mario", async (req, res) => {
+app.get("/mario", async(req, res) => {
     try {
-        const data = await marioModel;
+        const data = await marioModel.find({});
           res.send(data);
         
     } catch (e) {
